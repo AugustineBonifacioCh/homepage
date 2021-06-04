@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei",sans-serif;
+    box-sizing: border-box;
+}
+body{
+    /* viewport width 浏览器可见宽度 */
+    width: 100vw;
+    /* viewport height 浏览器可见高度 */
+    height: 100vh;
+    margin: 1px;
+    padding: 1px;
+    background-color: white;
+}
+nav {
+    margin: 2px;
+    position: relative;
+    /* Flex是Flexible Box的缩写，意为"弹性布局"，用来为盒状模型提供最大的灵活性。 */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* 上下0vw 左右5vw */
+    padding: 0 5vw;
+    background-color: #119681;
+    /* 阴影 */
+    box-shadow: 0 6px 20px #2e2f1f;
+}
+.banner {
+    width: 100vw;
+    height: 230px;
+    background-image: url("../images/zh_hangzhou_2.jpg");
+    /* 背景图位置 */
+    background-position: top;
+    /* 背景大小 cover自适应 */
+    background-size: cover;
+    /* repeat 重复 */
+    background-repeat: no-repeat;
+    border-radius: 0 90px 30px 70px;
+}
+.banner-zhwenzi {
+    width: 380px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../images/zh-xw-3.png");
+    background-size: cover;
+}
+.logo {
+    font-size: 40px;
+    margin: 12px 32px;
+}
+.logo a {
+    color: #2e2f1f;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: 2px solid #ad2e28;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.logo a:hover {
+    color: #ad2e28;
+    background-color: #2e2f1f;
+    border: 2px solid #2e2f1f;
+}
+a {
+    /* 超链接样式 实现底部无划线 */
+    text-decoration: none;   
+}
+nav ul li{
+    float: left;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+}
+.nav-menu li {
+    /* 列表样式 */
+    list-style: none;
+    padding: 10px;
+    margin: 6px;
+    font-size: 24px;
+    border-radius: 10px;
+    /* 样式转换时间 */
+    transition-duration: 0.6s;
+}
+/* hover 鼠标经过 */
+.nav-menu li:hover {
+    /* background-color: #d86934; */
+    /* 边框样式 */
+    /* box-shadow: 5px 3px 6px #2e2f1f; */
+    background-image: url("../images/zh-kuang-2.png");
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+.nav-menu a {
+    color: #f7e0ae;
+}
+.div-admin {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 80px;
+    text-align: center;
+}
+.container {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    margin-top: 22px;
+    background-color: #fceff9;
+    /* 圆角 */
+    border-radius: 12px;
+    text-align: center;
+
+    box-shadow: 0 6px 12px #2e2f1f;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 70px;
+    text-align: center;
+    background-color: #119681;
+    box-shadow: 0 -6px 20px #2e2f1f;
+}
+footer div {
+    margin-top: 20px;
+}
+footer a {
+    color: #7b130a;
+}
+footer p {
+    color: #1e0604;
+}
