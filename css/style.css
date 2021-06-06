@@ -117,11 +117,9 @@ nav ul li{
     box-shadow: 0 6px 12px #2e2f1f;
 }
 footer {
-    position: absolute;
-    bottom: 0;
     width: 100vw;
     height: 70px;
-    text-align: center;
+    margin-top: 20px;
     background-color: #119681;
     box-shadow: 0 -6px 20px #2e2f1f;
 }
